@@ -1,0 +1,119 @@
+/* created style sheet */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background: #588157;
+    color: #CCD5AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #FAEDCD;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #D4A373;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content, .plant-growth {
+    max-width: 48%;
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    font-weight: 1800;
+    line-height: 1.2;
+    padding-bottom: 2%;
+}
+
+.home-content h3 {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #E9EDC9;
+    font-style: italic;
+}
+
+.plant-growth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-height: 100vh;
+    margin: 0 auto;
+    order: 2;
+}
+
+#plant-image {
+    width: 30%; 
+    height: auto; 
+}
+
+.plant-growth p {
+    font-size: 20px; 
+    margin-top: 10px; 
+    font-weight: 500;
+}
+
+button {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #CCD5AE;
+    border: 2px solid #CCD5AE;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #588157;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.button:hover {
+    color: #CCD5AE;
+    background: #588157;
+}

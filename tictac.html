@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="tictac.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="memory.html">Memory Cards</a>
+          <a href="rps.html">Rock, Paper, Scissors</a>
+          <a href="tictac.html" class = "active">Tic Tac Toe</a>
+          <a href="hangman.html">Hangman</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row text-center" id="intro-section">
+            <h1>Tic-Tac-Toe</h1>
+            <h2 class="message">Choose your player:</h2>
+            <form action="#">
+                <fieldset>
+                    <input type="radio" name="player-choice" id="player-choice-1" value="X" />
+                    <label for="player-choice-1">X</label>
+                    <input type="radio" name="player-choice" id="player-choice-2" value="O" />
+                    <label for="player-choice-2">O</label>
+                </fieldset>
+                <button type="button" id="reset" class="reset btn-primary hidden">Play Again</button>
+            </form>
+        </div>
+        <div class="row" id="grid-section">
+            <ul id="grid"></ul>
+        </div>
+    </div>
+    <div id="updateTotalPoints">
+        <div id="points" class="points">Points: 0 </div> 
+    </div>
+
+    <script src="tictac.js"></script>
+</body>
+
+</html>

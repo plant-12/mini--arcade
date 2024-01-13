@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini Arcade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="memory.html">Memory Cards</a>
+        <a href="rps.html">Rock, Paper, Scissors</a>
+        <a href="tictac.html">Tic Tac Toe</a>
+        <a href="hangman.html">Hangman</a>
+      </nav>
+    </header>
+
+    <section class="home">
+      <div class="home-content">
+        <h1>Welcome to the Mini Plant Arcade!</h1>
+        <h3>Play some mini games and grow your plant!</h3>
+      </div>
+
+      <div class="plant-growth">
+          <img id="plant-image" src="images/plantgrow_1.png" alt="Plant">
+          <p id="plant-message"></p>
+          <p><span id="total-points">0</span></p>
+          <button id="reset-button" class="button" onclick="resetTotalPoints()">Reset Points</button>
+      </div>
+    </section>
+
+	<script src="script.js"></script>
+  </body>
+</html>
